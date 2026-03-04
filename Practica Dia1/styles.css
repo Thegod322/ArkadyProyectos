@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+width: 80%;
+margin: auto;
+margin-bottom: 20px;
+}
+
+.hero{
+background-image: url('Img/incio.webp');
+background-size: cover;
+background-attachment: fixed;
+width: 100%;
+height: 100vh;
+background-position: center;
+}
+.flex{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.g20{
+    gap: 20px;
+}
+.g40{
+    gap: 40px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+.row{
+    flex-direction: row;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.w90{
+width: 90%;
+}
+.w50{
+width: 50%;
+}
+.w30{
+width: 30%;
+}
+.w100{
+width: 100%;
+}
+.w80{
+    width: 80%;
+}
+.h100{
+    height: 100%;
+}
+.h50{
+    height: 50px;
+}
+.h600{
+    height: 600px;
+}
+.h35{
+    height: 35px;
+}
+
+.img1{
+    background-image: url('Img/img1.webp');
+    background-size: 125%;
+    background-blend-mode: multiply;
+    background-position: center;
+    transition: 0.5s;
+}
+.img1:hover{
+    transform: translateY(-10px);
+    background-color: rgba(0,0,0,0.5);
+    background-size: 150%;
+    cursor: pointer;
+}
+
+.promoimg{
+    margin-top:10px;
+    background-image: url('Img/ImageGlasses1.webp');
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,0.5);
+}
+.promoimg2{
+    background-image: url('Img/Chicafoto.webp');
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,0.5);
+    background-position: center;
+    backdrop-filter: blur(10px);
+}
+.sub{
+text-align: center;
+margin: 20px;
+font-family: montserrat;
+}
+.comercial-text{
+    font-family: montserrat;
+    font-size: 48px;
+    color: #ffffff;
+
+}
+.comercial-text-black{
+    font-family: montserrat;
+    font-size: 3rem;
+    color: #111111;
+
+}
+.body-text{
+    font-family: montserrat;
+    font-size: 18px;
+    color: #ffffff;
+}
+.button-text{
+    font-family: montserrat;
+    font-size: 3rem;
+    color: #ffffff;
+
+}
+.button-text:hover{
+    color: #000000;
+    transition: 0.3s;
+}
+.collection{
+    margin-bottom: 30px;
+}
+.promo{
+    font-size: 40rem;
+    font-weight: 900;
+    font-family: montserrat;
+    color: #ffffff;
+    margin-left:20px;
+}
+.oferta{
+    width: 100%;
+}
+.small{
+    width: 30%;
+}
+.big{
+    width: 70%;
+}
+.right{
+    align-items: end;
+}
+.jright{
+    justify-content: flex-end;
+}
+.center{
+    align-items: center;
+}
+.jcenter{
+    justify-content: center;
+}
+.left {
+    align-items: flex-start;
+}
+.jleft{
+    justify-content: flex-start;
+}
+.m50{
+    margin-top: 50px;
+}
+.top{
+    justify-content: flex-start;
+}
+.CTA{
+
+    background-color: rgb(163, 124, 84);
+    color: #ffffff;
+}
+.selfright{
+    align-self: flex-end;
+}
+.selfleft{
+    align-self: flex-start;
+}
+.selfcenter{
+    align-self: center;
+}
+.bold{
+    font-weight: 700;
+}
+.light{
+    font-weight: 300;
+}
+.mar50{
+    margin: 50px;
+}
+.p50{
+    padding: 50px;
+}
+.p25{
+    padding: 25px;
+}
+.p20{
+    padding: 20px;
+}
+.p15{
+    padding: 15px;
+}
+.imagecontent{
+    background-size: cover;
+    margin-bottom: 60px;
+
+}
+.mbot{
+    margin-bottom: 20px;
+}
+.ph50{
+    padding-bottom: 50px;
+    padding-top : 50px;
+}
+.mh50{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mh20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mw50{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.mw100{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.button-noback{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: montserrat;
+    cursor: pointer;
+    text-decoration: none;
+}
+.button-noback::after{
+    display: block;
+    content: "";
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform : scaleX(0);
+    transform-origin: left;
+    transition: 0.3s, transform 0.3s;
+}
+.button-noback:hover::after{
+    transform: scaleX(1);
+}
+
+.footer{
+    background-color: #111111;
+    height: 300px;
+    color: #ffffff;
+}
+.headertext{
+    font-family: montserrat;
+    font-size: 1rem;
+    color: #161616;
+}
+.header{
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+}
+.restxt{
+    font-size: 25vw;
+}

@@ -1,0 +1,128 @@
+/* =========================
+   HEADER PRINCIPAL
+========================= */
+.header {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Separa logo y menú a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+  
+    padding: 20px 80px; /* Espaciado interno: 20px arriba/abajo, 80px izquierda/derecha */
+    position: fixed; /* Permite posicionar elementos absolutos dentro del header */
+    z-index: 1000;
+    width: 100%;
+
+}
+
+
+/* =========================
+   MENÚ DE NAVEGACIÓN
+========================= */
+.nav-menu {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Coloca los li en fila horizontal */
+    gap: 20px; /* Espacio entre cada elemento del menú */
+}
+
+/* Enlaces del menú */
+.nav-menu a {
+    font-family: sans-serif; /* Fuente simple sin serif */
+    text-decoration: none; /* Quita el subrayado */
+    color: rgb(88, 87, 87); /* Color gris oscuro */
+    padding: 8px 12px; /* Espaciado interno tipo botón */
+    transition: background 0.3s ease; /* Transición suave al cambiar el fondo */
+}
+
+/* =========================
+   EFECTO HOVER
+========================= */
+.nav-menu a:hover {
+    color: white; /* Cambia el texto a blanco */
+    background-color: #555; /* Fondo gris oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* =========================
+   ENLACE ACTIVO
+========================= */
+.nav-menu a.active {
+    color: red; /* Texto rojo para indicar sección actual */
+    border-bottom: solid 2px red; /* Línea inferior roja */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* =========================
+   BOTÓN HAMBURGUESA
+========================= */
+.hamburger {
+    display: none; /* Oculto en escritorio */
+    flex-direction: column; /* Las líneas se colocan en columna */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    gap: 5px; /* Espacio entre las líneas */
+}
+
+/* Cada línea del botón */
+.hamburger span {
+    width: 25px; /* Ancho de la línea */
+    height: 3px; /* Grosor */
+    background-color: rgb(224, 13, 13); /* Color rojo */
+    transition: 0.3s; /* Animación suave */
+}
+
+/* =========================
+   ANIMACIÓN DEL BOTÓN
+   (cuando tiene clase .open)
+========================= */
+
+/* Primera línea rota */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+/* Segunda línea desaparece */
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+/* Tercera línea rota en sentido contrario */
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+    /* Muestra el botón hamburguesa en móvil */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Menú desplegable */
+    .nav {
+        position: absolute; /* Se posiciona respecto al header */
+        top: 70px; /* Separado desde arriba */
+        left: 0;
+        width: 100%; /* Ocupa todo el ancho */
+        display: none; /* Oculto por defecto */
+    }
+
+    /* Cuando el menú está activo (con JS) */
+    .nav.active {
+        display: block; /* Se muestra */
+    }
+
+    /* El menú cambia a vertical */
+    .nav-menu {
+        flex-direction: column; /* Ahora los li se apilan */
+        padding: 20px; /* Espaciado interno */
+    }
+
+    /* Espaciado entre elementos en móvil */
+    .nav-menu li {
+        margin-bottom: 10px;
+    }
+    .nav-menu a {
+        color: white;
+    }
+}

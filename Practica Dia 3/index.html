@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- Indica al navegador que usamos HTML5 -->
+
+<html lang="en">
+<!-- Idioma del documento (en este caso inglés) -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite usar caracteres especiales (acentos, ñ, etc.) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el diseño sea responsive en dispositivos móviles -->
+
+    <title>Document</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Hoja de estilos principal -->
+
+    <link rel="stylesheet" href="menu.css">
+    <!-- Hoja de estilos específica del menú -->
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER PRINCIPAL
+  ========================== -->
+  <header class="header sticky">
+
+    <!-- Logo -->
+    <div class="logo">
+       <img src="IMG/logo.png" alt="">
+       <!-- Imagen del logotipo -->
+    </div>
+
+    <!-- Botón hamburguesa (solo visible en móvil con CSS) -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- Cada span representa una línea del icono -->
+    </div>
+
+    <!-- Navegación -->
+    <nav class="nav" id="nav">
+        <ul class="nav-menu">
+            <li><a href="#" class="active">Inicio</a></li>
+            <!-- Clase active indica la sección actual -->
+
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+</header>
+<div class="hero flex mb50">
+    <div class = "blue relative w50 white">
+        <h1 class="absolute hero-text top30 right17">ALL DAY</h1>
+        <div class="absolute bottom10 left40 row flex gap20">
+            <div>Facebook</div>
+            <div>Instagram</div>
+            <div>Twitter</div>
+        </div>
+    </div>
+    <div class = "relative w50">
+        <h1 class="absolute hero-text top30 left17"><span>SURF.</span></h1>
+        <div class="absolute bottom30 left17 col flex gap20">
+            <div>"Surfing is the most blissful experience you can have on this planet, a taste of heaven".</div>
+            <div>JOHN MCCARTHY</div>
+        </div>
+    </div>
+</div>
+<section class="w90 mb50 ">
+<div class="flex h600px jcenter mb50">
+    <div class="img1 w50 h100"></div>
+    <div class="flex col w50 gap20">
+        <div>LA ESCUELA</div>
+        <div>En la escuela Donosti Surf Eskola ofrecemos clases de surf desde 1995 para diferentes edades y NIVELES DE HABILIDAD.</div>
+        <div>Los cursos de iniciación, pretenden introducir de una forma amena a la práctica de este deporte. Impartimos también cursos de perfeccionamiento para los que deseen mejorar su técnica.</div>
+    </div>
+</div>
+<div class=" flex h800px jcenter">
+    <div class="flex col w50">
+        <div>El programa de Verano 2017 combina todas las fases relevantes para introducirte y evolucionar en este deporte con la máxima seguridad, de una forma progresiva y a unos precios asequibles.Además de nuestro programa de Verano, ofrecemos la posibilidad de dar clases particulares individualizadas o a grupos en cualquier época del año.</div>
+        <div>Para el desarrollo de las clases seguimos unas pautas para que los alumnos aprendan con la máxima seguridad posible y que no ocurran accidentes.</div>
+        <div>El ratio profesor-alumno ideal es de cinco alumnos por cada profesor en el nivel de iniciación. En caso de que los alumnos tengan cierta independencia en el agua, se podría aumentar a siete deportistas por profesor..</div>
+    </div>
+    <div class="img2 w50 h100"></div>
+</div>
+    
+</section>
+<section class="w90 flex col jcenter tacenter mb50 gap50">
+    <div>MONITORES</div>
+    <div>El equipo de monitores está formado por un grupo de personas que a pesar de su juventud acumulan una amplia experiencia en la práctica y enseñanza de este deporte.</div>
+    <div class="flex row gap20 mb50">
+        <div class="flex col flex-1">
+            <img src="RES/face1.jpg" alt="" class="w100">
+            <div>ESTITXU ESTREMO</div>
+            <div>Bicampeona Europea de surf y miembro de la Selección Española de surf</div>
+        </div>
+        <div class="flex col flex-1">
+            <img src="RES/face2.jpg" alt="" class="w100">
+            <div>VICTOR IVÁN POMBO</div>
+            <div>Varios títulos de campeón gallego de surf y un projunior internacional</div>
+        </div>
+        <div class="flex col flex-1">
+            <img src="RES/face3.jpg" alt="" class="w100">
+            <div>GUILLERME TAMEGA</div>
+            <div>Ganador del evento de bodyboarding Shark Island tres veces seguidas</div>
+        </div>
+        <div class="flex col flex-1">
+            <img src="RES/face4.jpg" alt="" class="w100">
+            <div>FRED BOTH</div>
+            <div>Surfista profesional nacido en Hawaii</div>
+        </div>
+    </div>
+    <div class="mauto w50">
+        Hemos organizado eventos en los que nuestros cursillistas han podido ver en directo competir a bodyboarders de talla mundial como David Pérez (campeon del mundo junior), Aritz Larrinaga (campeón del mundo Junior), Cristian Pérez (subcampeón de Europa), etc.
+    </div>
+
+
+</section>
+<section class="video  h600px flex jcenter mb20">
+<video src="RES/surfvid.mp4" class="w100" autoplay muted loop></video>
+</section>
+<section class="w100">
+    <div class = "flex h500px jcenter gap20">
+        <div class="img3 w50 acenter jcenter flex">
+            <h2>NEOPRENOS</h2>
+        </div>
+        <div class="img4 w50 acenter jcenter flex">
+            <h2>TABLAS</h2>
+        </div>
+    </div>
+    <div class="w50 mauto">
+        <p>Encuentra los mejores productos para disfrutar de tu pasión.</p>
+        <p>¡Disfruta de ofertas y promociones VIP!</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div>CONTACTO</div>
+    <div>Teléfono: 123-456-7890 | Email:
+</footer>
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+<script>
+    // Seleccionamos el botón hamburguesa por su ID
+    const hamburger = document.getElementById("hamburger");
+
+    // Seleccionamos el menú de navegación
+    const nav = document.getElementById("nav");
+
+    // Añadimos un evento click al botón
+    hamburger.addEventListener("click", function () {
+
+        // Activa o desactiva la clase "active" en el menú
+        // Esto muestra u oculta el menú en móvil
+        nav.classList.toggle("active");
+
+        // Activa o desactiva la clase "open" en el botón
+        // Esto ejecuta la animación del icono (se convierte en X)
+        hamburger.classList.toggle("open");
+    });
+</script>
+
+</body>
+</html>
