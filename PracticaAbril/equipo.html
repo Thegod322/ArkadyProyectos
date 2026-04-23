@@ -8,24 +8,20 @@
     <link rel="stylesheet" href="equipo.css">
 </head>
 <body class="flex col gap200 bgray creamtxt">
-<header class="header sticky flex jbetween acenter ph100 w100">
-    <p class="h2_pc">LUR & ARGI</p>
-    <div class="flex pl100 gap50 navbartxt_pc">
-        <a href="" class="body_pc ">INICIO</a>
-        <a href="" class="body_pc">PROYECTOS</a>
-        <a href="" class="body_pc">EQUIPO</a>
-        <a href="" class="body_pc">CONTACTO</a>
-    </div>
+<header class="header page-header flex jbetween acenter ph100 w100">
+    <a href="index.html" class="brand h2_pc">ARGI & LUR</a>
+    <nav class="page-nav flex pl100 gap50 navbartxt_pc" aria-label="Principal">
+        <a href="index.html" class="page-nav__link">INICIO</a>
+        <a href="casa.html" class="page-nav__link">PROYECTOS</a>
+        <a href="equipo.html" class="page-nav__link">EQUIPO</a>
+        <a href="#" class="page-nav__link">CONTACTO</a>
+    </nav>
 
-    <!-- Botón hamburguesa (solo visible en móvil con CSS) -->
-    <div class="hamburger" id="hamburger">
+    <div class="hamburger" id="hamburger" aria-hidden="true">
         <span></span>
         <span></span>
         <span></span>
-        <!-- Cada span representa una línea del icono -->
     </div>
-
-    
 </header>
 
 

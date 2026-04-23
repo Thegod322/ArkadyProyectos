@@ -128,10 +128,6 @@ function showActiveSlide(index, animateContent) {
     gsap.set(current.visual, { scale: 1, opacity: 1 });
     gsap.set(current.overlay, { opacity: 0.92 });
 
-    if (materialPreview) {
-        current.visual.after(materialPreview);
-    }
-
     if (animateContent) {
         animateInSlide(current);
     } else {
