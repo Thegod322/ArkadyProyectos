@@ -5,14 +5,37 @@
     display: flex; /* Activa Flexbox */
     justify-content: space-between; /* Separa logo y menú a los extremos */
     align-items: center; /* Centra verticalmente los elementos */
-  
-    padding: 20px 80px; /* Espaciado interno: 20px arriba/abajo, 80px izquierda/derecha */
+    padding: 0px 50px; /* Espaciado interno: 20px arriba/abajo, 80px izquierda/derecha */
     position: fixed; /* Permite posicionar elementos absolutos dentro del header */
     z-index: 1000;
     width: 100%;
+    backdrop-filter: blur(0px); 
 
 }
+.header.scrolled {
+    backdrop-filter: blur(20px);
+    transition: 0.3s ease;
+}
+.nav {
+    display: none;
+}
 
+/* Cuando el JS añade la clase "active", el menú se muestra como overlay */
+.nav.active {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: fixed;   /* Se superpone a todo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;     /* Ocupa toda la pantalla */
+    background-color: rgb(21, 21, 131);
+    z-index: 999; 
+    padding-top: 10%;
+    text-align: center;
+
+}
 
 /* =========================
    MENÚ DE NAVEGACIÓN
@@ -27,8 +50,9 @@
 .nav-menu a {
     font-family: sans-serif; /* Fuente simple sin serif */
     text-decoration: none; /* Quita el subrayado */
-    color: rgb(88, 87, 87); /* Color gris oscuro */
+    color: rgb(255, 255, 255); /* Color gris oscuro */
     padding: 8px 12px; /* Espaciado interno tipo botón */
+    font-size: 35px;
     transition: background 0.3s ease; /* Transición suave al cambiar el fondo */
 }
 
@@ -36,25 +60,21 @@
    EFECTO HOVER
 ========================= */
 .nav-menu a:hover {
-    color: white; /* Cambia el texto a blanco */
-    background-color: #555; /* Fondo gris oscuro */
-    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: line-through; /* Subraya el enlace al pasar el mouse */
 }
 
 /* =========================
    ENLACE ACTIVO
 ========================= */
 .nav-menu a.active {
-    color: red; /* Texto rojo para indicar sección actual */
-    border-bottom: solid 2px red; /* Línea inferior roja */
-    border-radius: 5px; /* Bordes redondeados */
+    display: block; /* Bordes redondeados */
 }
 
 /* =========================
    BOTÓN HAMBURGUESA
 ========================= */
 .hamburger {
-    display: none; /* Oculto en escritorio */
+    display: flex; /* Oculto en escritorio */
     flex-direction: column; /* Las líneas se colocan en columna */
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     gap: 5px; /* Espacio entre las líneas */
@@ -64,8 +84,11 @@
 .hamburger span {
     width: 25px; /* Ancho de la línea */
     height: 3px; /* Grosor */
-    background-color: rgb(224, 13, 13); /* Color rojo */
+    background-color: rgb(17, 13, 224); /* Color rojo */
     transition: 0.3s; /* Animación suave */
+}
+.hamburger.open span {
+    background-color: white;
 }
 
 /* =========================

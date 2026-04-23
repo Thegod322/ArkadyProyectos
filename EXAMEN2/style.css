@@ -19,6 +19,12 @@
 .abetween { align-items: stretch; }
 .selfcenter { align-self: center; }
 .dblock { display: block; }
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+
+}
 
 /* ========== POSITIONING ========== */
 
@@ -105,6 +111,7 @@
 .pb50 { padding-bottom: 50px; }
 .pb100 { padding-bottom: 100px; }
 
+.ph20{ padding-left: 20px; padding-right: 20px; }
 .ph50 { padding-left: 50px; padding-right: 50px; }
 .ph100 { padding-left: 100px; padding-right: 100px; }
 .ph150 { padding-left: 150px; padding-right: 150px; }
@@ -136,6 +143,11 @@
 .footer-txt { font-size: 25px; }
 .sptxt { color: rgb(21, 21, 131); font-size: 60px; }
 
+.h1{ 
+    font-size: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
 .h2 {
     font-size: 35px;
     font-family: 'Nunito Sans', sans-serif;
@@ -182,105 +194,42 @@
 .blue-text { color: rgb(21, 21, 255); }
 
 /* ========== BACKGROUND COLORS ========== */
-
-.blue { background-color: rgb(21, 21, 131); }
-.bgdarkblue { background-color: rgb(0, 5, 54); }
 .bgwhite { background-color: rgb(255, 255, 255); }
-.bgblue { background-color: rgb(21, 21, 131); }
-.bglightblue { background-color: rgb(0, 75, 255); }
-.bgbluesat { background-color: rgb(0, 0, 255); }
-.bgray { background-color: rgb(233, 233, 233); }
-
+body { background-color: rgb(240, 240, 240); }
+.bggreen { background-color: rgb(0, 255, 0); }
 /* ========== BORDERS ========== */
+.br10 { border-radius: 10px; }
+.br20 { border-radius: 20px; }
 
-.bblack { border: 3px solid; border-color: #000000; }
-.line { border-left: 1px solid rgb(21, 21, 131); padding-left: 50px; }
 
 /* ========== IMAGES & BACKGROUNDS ========== */
+.icon {
+    width: 50px;
+    height: 50px;
+}
 
-.img1 { background-image: url('RES/img1.jpg'); background-size: cover; }
-.img2 { background-image: url('RES/img2.jpg'); background-size: cover; }
-.curso-img1 { background-image: url('RES/curso1.jpg'); background-size: cover; }
-.curso-img2 { background-image: url('RES/curso2.jpg'); background-size: cover; }
-.imgnum { width: 150px; height: 150px; }
-
-.img3 {
-    background-image: url('RES/neoprenos.jpg');
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-blend-mode: multiply;
-}
-.img4 {
-    background-image: url('RES/tablas.jpg');
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-blend-mode: multiply;
-}
-.imgnumback {
-    background-image: url('RES/02img.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 150px 150px;
-}
-.imgnumback03 {
-    background-image: url('RES/03img.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 150px 150px;
-}
-.imgalquler {
-    background-image: url('RES/alquilerHero.webp');
-    background-size: cover;
-    background-position: center;
-}
 
 /* ========== COMPONENTS ========== */
 
-.hero {
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    position: relative;
+.card{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
-.hero-text {
-    font-size: 5vw;
-    color: white;
-    font-family: sans-serif;
-}
-.hero-text span { color: rgb(21, 21, 131); }
-.hero-cursos {
-    height: 50vh;
-    width: 100%;
-    background-image: url("RES/cabecera-cursos.jpg");
-    background-size: cover;
-    background-position: center;
-}
-.surf-img {
-    position: absolute;
-    height: 890px;
-    width: 19%;
-    bottom: 0px;
-    left: 40.1%;
-    animation: surf-move 0.7s ease-out;
-}
-.video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.footer { height: 100px; background-color: rgb(21, 21, 131); }
-.iframe { width: 100%; height: 200px; }
-
-.logo {
-    width: 100px;
-    height: 100%;
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
     transition: 0.3s ease;
-    display: flex;
-    align-self: center;
 }
-/* Logo text turns black when scroll is between 25% and 60% */
-.logo-dark .st0 { fill: #000000 !important; transition: 0.3s ease; }
-
+ul {
+  list-style: none; 
+  padding-left: 0;
+}
+ul li::before {
+  content: "✓ "; 
+  color: green;
+  font-weight: bold;
+  margin-right: 8px;
+}
 .button {
     border: 1px solid rgb(21, 21, 131);
     border-color: rgb(255, 255, 255);
@@ -296,23 +245,10 @@
 
 /* ========== ANIMATIONS ========== */
 
-@keyframes surf-move {
-    from { transform: translateY(800px); }
-    to { transform: translateY(0px); }
-}
-.hora {
-    position: relative;
-}
-.hora::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 30%;
-    width: 30px;
-    height: 30px;
-    background-image: url('RES/hora-azul.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 300;
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 }

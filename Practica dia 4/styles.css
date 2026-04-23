@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display:flex;
+}
+.jcenter{
+    justify-content: center;
+}
+.acenter{
+    align-items: center;
+}
+.aend{
+    align-items: end;
+}
+.jend{
+    justify-content: end;
+}
+.jbetween{
+    justify-content: space-between;
+}
+.abetween{
+    align-items: stretch;
+}
+.h100{
+    height: 100%;
+}
+.h10{
+    height: 10%;
+}
+.col{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+.rev{
+    flex-direction: row-reverse;
+}
+.p25{
+    padding: 25px;
+}
+.p50{
+    padding: 50px;
+}
+.p100{
+    padding: 100px;
+}
+.p250{
+    padding: 250px;
+}
+.m25{
+    margin: 25px;
+}
+.m50{
+    margin: 50px;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(RES/heroimg.webp);
+    background-size: cover;
+    background-position: center;
+    /* multiply image with background*/
+    position: relative;
+    
+    
+}
+
+.hero-text{
+    font-size: 5vw;
+    color: white;
+    font-family: sans-serif;
+}
+.bald{
+    font-weight: bold !important; 
+}
+.top30{
+    top: 30%;
+}
+.right10{right: 10%;}
+.right15{
+    right: 15%;
+}
+.right17{
+    right: 17%;
+}
+.left0{left: 0;}
+.left17{
+    left: 17%;
+}
+.left25{left:25%;}
+.left40{
+    left: 40%;
+}
+.left31{
+    left: 31%;
+}
+.bottom10{
+    bottom: 10%;
+}
+.bottom30{
+    bottom: 30%;
+}
+.b0{
+    bottom: 0;
+}
+.b30{
+    bottom: -30%;
+}
+.b60{
+    bottom: -60%;
+}
+.br5{
+    border-radius:5px;
+}
+.br10{
+    border-radius:10px;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.gap20{
+    gap: 20px;
+}
+.gap50{
+    gap: 50px;
+}
+.gap100{
+    gap: 100px;
+}
+.gap150{
+    gap: 150px;
+}
+.gap200{
+    gap: 200px;
+}
+.w80{
+    width: 80%;
+    margin: auto;
+}
+.w90{
+    width: 90%;
+    margin: auto;
+}
+.w50{
+    width: 50%;
+}
+.w55{
+    width: 55%;
+}
+.w25{
+    width: 25%;
+}
+.w22{
+    width: 22%;
+}
+.w45{
+    width: 45%;
+}
+.w100{
+    width: 100%;
+}
+.w80px{
+    width: 80px;
+}
+.flex-1 {
+    flex: 1;
+}
+.tcenter {
+    text-align: center;
+}
+.h100{
+    height: 100%;
+}
+.h600px{
+    height: 600px;
+}
+.h100px{
+    height: 100px;
+}
+.h800px{
+    height: 800px;
+}
+.h500px{
+    height: 500px;
+}
+.tacenter{
+    text-align: center;
+}
+.taleft{
+    text-align: left;
+}
+.mauto{
+    margin: auto;
+}
+.footer{
+    height: 100px;
+    background-color: rgb(255, 0, 77);
+}
+.mb50{
+    margin-bottom: 50px;
+}
+.mb33{
+    margin-bottom: 33px;
+}
+.mb100{
+    margin-bottom: 100px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.mt30{
+    margin-top: 30%;
+}
+.mb100{
+    margin-bottom: 100px;
+}
+.mb150{
+    margin-bottom: 150px;
+}
+.mb200{
+    margin-bottom: 200px;
+}
+.white{
+    color: white;
+}
+.h1{
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.h2{
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.h3{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+
+}
+.promo-txt{
+    font-size: 100px;
+}
+.body-txt{
+    font-size: 20px;
+    font-family: Helvetica;
+    font-style: italic;
+}
+.utility-txt{
+    font-size: 14px;
+}
+.button-txt{
+    font-size:24px;
+}
+.footer-txt{
+    font-size: 25px;
+}
+.button-txt-curso{
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+
+}
+.button-txt30{
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+
+}
+.txt60{
+    font-size: 60px;
+    font-family: 'Nunito', sans-serif;
+
+}
+.txt25{
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+
+}
+.txt16{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+
+}
+.bgwhite{
+    background-color: rgb(255, 255, 255);
+}
+.bgblue{
+    background-color: rgb(21, 21, 131);
+}
+.bglightblue{
+    background-color: rgb(0, 75, 255);
+}
+.bgbluesat{
+    background-color: rgb(0, 0, 255);
+}
+.bgrose{
+    background-color: rgb(255, 0, 77);
+}
+.bblack{
+    border:3px solid;
+    border-color: #000000;
+}
+.ph50{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.ph100{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.ph150{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.ph200{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.selfcenter{
+    align-self: center;
+}
+.pr100{
+    padding-right: 100px;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    transition: 0.3s ease;
+    background-image: url(RES/GuapiLogo.svg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Logo text turns black when scroll is between 25% and 60% */
+.logo-dark .st0 {
+    fill: #000000 !important;
+    transition: 0.3s ease;
+}
+
+.mv{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mv100{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.button{
+    border: 1px solid rgb(21, 21, 131);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(21, 21, 131);
+    border-color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+.iframe{
+    width: 100%;
+    height: 200px;
+}
+.hero-cursos{
+    height: 50vh;
+    width: 100%;
+    background-image: url("RES/cabecera-cursos.jpg");
+    background-size: cover;
+    background-position: center;
+    /* multiply image with background*/
+}
+.imgnumback03{
+    background-image: url('RES/03img.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 150px;
+}
+.curso-img1{
+    background-image: url('RES/curso1.jpg');
+    background-size: cover;
+}
+.curso-img2{
+    background-image: url('RES/curso2.jpg');
+    background-size: cover;
+}
+.dblock{
+    display: block;
+}
+.w33{
+    width: 33.3%;
+}
+.w15{
+    width: 15%;
+}
+.pv20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pv50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pv100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.bgray{
+    background-color: rgb(233, 233, 233);
+}
+.whitetxt{
+    color: white;
+}
+.blacktxt{
+    color: black;
+}
+.rosetxt{
+    color: rgb(255, 0, 77);
+}
+
+
+
+.header{
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Separa logo y menú a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+  
+    padding: 20px 50px; /* Espaciado interno: 20px arriba/abajo, 80px izquierda/derecha */
+    position: fixed; /* Permite posicionar elementos absolutos dentro del header */
+    z-index: 1000;
+    width: 100%;
+
+}
+
+
+
+
+
+
+.speakerimg1{
+    background-image: 
+        linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%),
+        url('RES/GuapikoImg1.webp');
+    background-size: cover;
+    background-position: center;
+}
+.speakerimg2{
+    background-image: 
+        linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%),
+        url('RES/GuapikoImg2.webp');
+    background-size: cover;
+    background-position:center;
+}
+.speakerimg3{
+    background-image: 
+        linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%),
+        url('RES/GuapikoImg3.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.imgmateria1{
+    background-image: url('RES/materia01.webp');
+    background-size: cover;
+    background-position:center;
+
+}
+.imgmateria2{
+    background-image: url('RES/materia02.webp');
+    background-size: cover;
+    background-position:center;
+
+}
+.imgmateria3{
+    background-image: url('RES/materia03.webp');
+    background-size: cover;
+    background-position:center;
+
+}
+.backlogo{
+    width: 800px;
+    height: 800px;
+    opacity: 0.1;
+    bottom: -100px;
+    left:-20%;
+    z-index: -1;
+}

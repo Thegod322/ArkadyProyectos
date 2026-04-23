@@ -1,0 +1,389 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html { scroll-behavior: smooth; }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== DISPLAY ===== */
+.flex { display: flex; }
+.dblock { display: block; }
+
+/* ===== FLEX DIRECTION ===== */
+.col { flex-direction: column; }
+.row { flex-direction: row; }
+.rev { flex-direction: row-reverse; }
+
+/* ===== JUSTIFY CONTENT ===== */
+.jcenter { justify-content: center; }
+.jend { justify-content: end; }
+.jbetween { justify-content: space-between; }
+
+/* ===== ALIGN ITEMS ===== */
+.acenter { align-items: center; }
+.aend { align-items: end; }
+.abetween { align-items: stretch; }
+.astart { align-items: start; }
+.selfcenter { align-self: center; }
+.selfstart { align-self: start; }
+
+
+/* ===== FLEX UTILITIES ===== */
+.flex-1 { flex: 1; }
+
+/* ===== GAP ===== */
+.gap20 { gap: 20px; }
+.gap50 { gap: 50px; }
+.gap100 { gap: 100px; }
+.gap150 { gap: 150px; }
+.gap200 { gap: 200px; }
+
+/* ===== WIDTH ===== */
+.w15 { width: 15%; }
+.w22 { width: 22%; }
+.w25 { width: 25%; }
+.w33 { width: 33.3%; }
+.w45 { width: 45%; }
+.w50 { width: 50%; }
+.w55 { width: 55%; }
+.w80 {width: 80%;margin: auto;}
+.w80px { width: 80px; }
+.w90 {width: 90%;margin: auto;}
+.w100 { width: 100%; }
+
+/* ===== HEIGHT ===== */
+.h10 { height: 10%; }
+.h15 { height: 15%; }
+.h20 { height: 20%; }
+.h100 { height: 100%; }
+.h100px { height: 100px; }
+.h500px { height: 500px; }
+.h600px { height: 600px; }
+.h800px { height: 800px; }
+
+/* ===== PADDING ===== */
+.p25 { padding: 25px; }
+.p50 { padding: 50px; }
+.p100 { padding: 100px; }
+.p250 { padding: 250px; }
+.ph50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.ph100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.ph150 {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.ph200 {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.pr100 { padding-right: 100px; }
+.pv20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pv50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pv100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* ===== MARGIN ===== */
+.m25 { margin: 25px; }
+.m50 { margin: 50px; }
+.mauto { margin: auto; }
+.mb10 { margin-bottom: 10px; }
+.mb20 { margin-bottom: 20px; }
+.mb33 { margin-bottom: 33px; }
+.mb50 { margin-bottom: 50px; }
+.mb100 { margin-bottom: 100px; }
+.mb150 { margin-bottom: 150px; }
+.mb200 { margin-bottom: 200px; }
+.mt30 { margin-top: 30%; }
+.mv {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mv100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* ===== POSITION ===== */
+.absolute { position: absolute; }
+.relative { position: relative; }
+
+/* ===== POSITION OFFSETS ===== */
+.top50 { top: 50%; }
+.top40 { top: 40%; }
+.top30 { top: 30%; }
+.top15 { top: 15%; }
+.top10 { top: 10%; }
+.right10 { right: 10%; }
+.right15 { right: 15%; }
+.right17 { right: 17%; }
+.right30 { right: 30%; }
+.left0 { left: 0; }
+.left10 { left: 10%; }
+.left13 { left: 13%; }
+.left15 { left: 15%; }
+.left17 { left: 17%; }
+.left25 { left: 25%; }
+.left27 { left: 27%; }
+.left30 { left: 30%; }
+.left31 { left: 31%; }
+.left40 { left: 40%; }
+.bottom10 { bottom: 10%; }
+.bottom30 { bottom: 30%; }
+.b0 { bottom: 0; }
+.b30 { bottom: -30%; }
+.b60 { bottom: -60%; }
+
+/* ===== BORDER ===== */
+.br5 { border-radius: 5px; }
+.br10 { border-radius: 10px; }
+.bblack {
+    border: 3px solid;
+    border-color: #000000;
+}
+.brosel{
+    border-left: 3px solid;
+    border-color: rgb(255, 0, 77);
+}
+.broser{
+    border-right: 3px solid;
+    border-color: rgb(255, 0, 77);
+}
+
+/* ===== TEXT ===== */
+.tcenter { text-align: center; }
+.tacenter { text-align: center; }
+.taleft { text-align: left; }
+.bald { font-weight: bold !important; }
+.light { font-weight: 200 !important; }
+.white { color: white; }
+.whitetxt { color: white; }
+.blacktxt { color: black; }
+.rosetxt { color: rgb(255, 0, 77) !important; }
+
+/* ===== TYPOGRAPHY ===== */
+.hero-txt {
+    font-size: 13vw;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+}
+.h1 {
+    font-size: 50px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+}
+.h2 {
+    font-size: 35px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+}
+.h3 {
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+}
+.body-txt {
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
+}
+.promo-txt { font-size: 100px; }
+.utility-txt { font-size: 14px; }
+.button-txt { font-size: 24px; }
+.footer-txt {
+    font-size: 25px;
+    font-family: "Nunito Sans", sans-serif;
+}
+.button-txt-curso {
+    font-size: 50px;
+    font-family: "Nunito Sans", sans-serif;
+}
+.button-txt30 {
+    font-size: 30px;
+    font-family: "Nunito Sans", sans-serif;
+}
+.txt16 {
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+}
+.txt25 {
+    font-size: 25px;
+    font-family: "Nunito Sans", sans-serif;
+}
+.txt60 {
+    font-size: 60px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* ===== BACKGROUNDS ===== */
+.bgwhite { background-color: rgb(255, 255, 255); }
+.bgrose { background-color: rgb(255, 0, 77); }
+
+/* ===== COMPONENTS ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    backdrop-filter: blur(40px);
+}
+.footer {
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.iframe {
+    width: 100%;
+    height: 200px;
+}
+.button {
+    cursor: pointer;
+    border: 3px solid rgb(255, 0, 77);
+    background-color: rgb(255, 0, 77);
+    color: white;
+    transition: 0.3s;
+}
+.button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    color: rgb(255, 0, 77);
+    border: 3px solid rgb(255, 0, 77);
+}
+
+/* ===== LOGO ===== */
+.logo {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s ease;
+    background-image: url(RES/GuapiLogo.svg);
+    background-size: cover;
+    background-position: center;
+}
+.logo-dark .st0 {
+    fill: #000000 !important;
+    transition: 0.3s ease;
+}
+.backlogo {
+    width: 800px;
+    height: 800px;
+    opacity: 0.1;
+    bottom: -100px;
+    left: -20%;
+    z-index: -1;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(RES/heroimg.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.hero-cursos {
+    height: 50vh;
+    width: 100%;
+    background-image: url("RES/cabecera-cursos.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ===== SPEAKER IMAGES ===== */
+.speakerimg1 {
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%), url('RES/GuapikoImg1.webp');
+    background-size: cover;
+    background-position: center;
+}
+.speakerimg2 {
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%), url('RES/GuapikoImg2.webp');
+    background-size: auto 120%;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+}
+.speakerimg3 {
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%), url('RES/GuapikoImg3.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ===== COURSE IMAGES ===== */
+.curso-img1 {
+    background-image: url('RES/curso1.jpg');
+    background-size: cover;
+}
+.curso-img2 {
+    background-image: url('RES/curso2.jpg');
+    background-size: cover;
+}
+.imgnumback03 {
+    background-image: url('RES/03img.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 150px;
+}
+
+/* ===== MATERIA IMAGES ===== */
+.imgmateria1 {
+    background-image: url('RES/materia01.webp');
+    background-size: cover;
+    background-position: center;
+}
+.imgmateria2 {
+    background-image: url('RES/materia02.webp');
+    background-size: cover;
+    background-position: center;
+}
+.imgmateria3 {
+    background-image: url('RES/materia03noback.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.social-icon1 {
+    width: 50px;
+    height: 50px;
+    background-image: url('RES/social-logo1.png');
+    background-size: cover;
+    background-position: center;
+    display: block;
+    
+}
+.social-icon2 {
+    width: 50px;
+    height: 50px;
+    background-image: url('RES/social-logo2.png');
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+.social-icon3 {
+    width: 50px;
+    height: 50px;
+    background-image: url('RES/social-logo3.png');
+    background-size: cover;
+    background-position: center;
+    display: block;
+}

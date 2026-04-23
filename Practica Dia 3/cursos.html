@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<!-- Indica al navegador que usamos HTML5 -->
-
 <html lang="en">
-<!-- Idioma del documento (en este caso inglés) -->
-
 <head>
     <meta charset="UTF-8">
-    <!-- Permite usar caracteres especiales (acentos, ñ, etc.) -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Hace que el diseño sea responsive en dispositivos móviles -->
-
     <title>Document</title>
-    <!-- Título que aparece en la pestaña del navegador -->
-
     <link rel="stylesheet" href="styles.css">
-    <!-- Hoja de estilos principal -->
-
     <link rel="stylesheet" href="menu.css">
     <!-- Hoja de estilos específica del menú -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
-
+   
   <!-- =========================
        HEADER PRINCIPAL
   ========================== -->
@@ -36,7 +24,7 @@
     <div class="logo" id="logo">
        <!--<img src="RES/logo.svg" alt="Logo"> -->
        <!-- Imagen del logotipo -->
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg class="logo-dark" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 640 480" style="enable-background:new 0 0 640 480;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#ffffff;}
@@ -153,93 +141,101 @@
     </ul>
 </nav>
 
-
-<div class="hero flex mb100 relative">
-    <div class = "blue relative w50 white">
-        <h1 class="absolute hero-text top30 right17">ALL DAY</h1>
-        <div class="absolute bottom10 left40 row flex gap20 utility-txt">
-            <div>Facebook</div>
-            <div>Instagram</div>
-            <div>Twitter</div>
-        </div>
-    </div>
-    <div class = "relative w50">
-        <h1 class="absolute hero-text top30 left25"><span>SURF.</span></h1>
-        <div class="absolute bottom30 left31 col flex gap20">
-            <div class="w55 body-txt">"Surfing is the most blissful experience you can have on this planet, a taste of heaven".</div>
-            <div class="h3 bald">JOHN MCCARTHY</div>
-        </div>
-        <img src="RES/expand_circle_down.svg" class=" absolute right10 bottom10 w80px " alt="">
-    </div>
-    <img src="RES/tabla-bradley.png" class="surf-img" alt="">
-</div>
-<section class="w90 mb50 ">
-<div class="flex h600px jcenter mb100">
-    <div class="img1 w50 h100"></div>
-    <div class="flex col w50 gap20 ph100 ">
-        <div class="h2 mb20 relative ph50"><span class="sptxt">.</span>LA ESCUELA <img src="RES/01img.svg" class="imgnum absolute b60"></div>
-        <div class="h3">En la escuela Donosti Surf Eskola ofrecemos clases de surf desde 1995 para diferentes edades y NIVELES DE HABILIDAD.</div>
-        <div class="h3">Los cursos de iniciación, pretenden introducir de una forma amena a la práctica de este deporte. Impartimos también cursos de perfeccionamiento para los que deseen mejorar su técnica.</div>
-    </div>
-</div>
-<div class=" flex h800px jcenter mb100">
-    <div class="flex col w50 h3 pr100 gap20">
-        <div>El programa de Verano 2017 combina todas las fases relevantes para introducirte y evolucionar en este deporte con la máxima seguridad, de una forma progresiva y a unos precios asequibles.Además de nuestro programa de Verano, ofrecemos la posibilidad de dar clases particulares individualizadas o a grupos en cualquier época del año.</div>
-        <div>Para el desarrollo de las clases seguimos unas pautas para que los alumnos aprendan con la máxima seguridad posible y que no ocurran accidentes.</div>
-        <div>El ratio profesor-alumno ideal es de cinco alumnos por cada profesor en el nivel de iniciación. En caso de que los alumnos tengan cierta independencia en el agua, se podría aumentar a siete deportistas por profesor..</div>
-    </div>
-    <div class="img2 w50 h100"></div>
-</div>
-    
+<section class="hero-cursos flex acenter jcenter">
+<h2 class="hero-text blacktxt tacenter"><span class="blue-text">.</span>CURSOS</h2>
 </section>
-<section class="w90 flex col jcenter tacenter mb50 gap50">
-    <div class="h2 mb20 relative ph50 imgnumback"><span class="sptxt">.</span>MONITORES </div>
-    <div class="flex h3 w50 selfcenter">El equipo de monitores está formado por un grupo de personas que a pesar de su juventud acumulan una amplia experiencia en la práctica y enseñanza de este deporte.</div>
-    <div class="flex row gap20 mb50 h3">
-        <div class="flex col flex-1 gap20">
-            <img src="RES/face1.jpg" alt="" class="w100">
-            <div class="blue-text bald">ESTITXU ESTREMO</div>
-            <div>Bicampeona Europea de surf y miembro de la Selección Española de surf</div>
-        </div>
-        <div class="flex col flex-1 gap20">
-            <img src="RES/face2.jpg" alt="" class="w100">
-            <div class="blue-text bald">VICTOR IVÁN POMBO</div>
-            <div>Varios títulos de campeón gallego de surf y un projunior internacional</div>
-        </div>
-        <div class="flex col flex-1 gap20">
-            <img src="RES/face3.jpg" alt="" class="w100">
-            <div class="blue-text bald">GUILLERME TAMEGA</div>
-            <div>Ganador del evento de bodyboarding Shark Island tres veces seguidas</div>
-        </div>
-        <div class="flex col flex-1 gap20">
-            <img src="RES/face4.jpg" alt="" class="w100">
-            <div class="blue-text bald">FRED BOTH</div>
-            <div>Surfista profesional nacido en Hawaii</div>
-        </div>
-    </div>
-    <div class="mauto w50 h3 taleft line mv">
-        Hemos organizado eventos en los que nuestros cursillistas han podido ver en directo competir a bodyboarders de talla mundial como David Pérez (campeon del mundo junior), Aritz Larrinaga (campeón del mundo Junior), Cristian Pérez (subcampeón de Europa), etc.
-    </div>
 
 
+<section class="texto-promo w90 mv">
+<hr>
+<p class ="pv20 h3 grey">Vive la magia del surfing en nuestros cursos de surf! Además de iniciarte en el surf o de mejorar tu técnica si ya sabes surfear, en los cursos de surf de Artsurfcamp disfrutarás aprendiendo a comprender el mar. Las corrientes, la formación de olas, o los distintos tipos de rompientes ¡no tendrán secretos para ti!</p>
+<hr>
 </section>
-<section class="video  h600px flex jcenter mb20">
-<video src="RES/surfvid.mp4" class="w100" autoplay muted loop></video>
+
+
+<section class="verano flex h600px w90 mb100">
+<div class="curso-img1 w50"></div>
+<div class="w50 flex col ph200 gap20 p25 h3">
+    <p class ="h2">VERANO</p>
+    <p>En nuestro programa de cursos de verano disfrutarás de las olas y las playas con unas temperaturas del agua muy agradables.</p>
+    <p>
+        <span>Los cursos incluyen</span>
+        <br>+ Clases teórico prácticas y monitores
+        <br>+ Material técnico (traje+tabla/bodyboard/aletas)
+        <br>+ Material didáctico
+        <br>+ Plan de preparación física
+        <br>Punto de encuentro en la playa de la Zurriola
+    </p>
+</div>
 </section>
-<section class="w100">
-    <div class = "flex h500px jcenter gap20">
-        <div class="img3 w50 acenter jcenter flex">
-            <h2 class="button" >NEOPRENOS</h2>
-        </div>
-        <div class="img4 w50 acenter jcenter flex">
-            <h2 class="button">TABLAS</h2>
-        </div>
+
+
+<section class="horas flex abetween jcenter tacenter p100 bgray whitetxt">
+<div class="col w33 dblock bblack m25">
+    <div class="button-txt30 bgdarkblue pt30 pb20">5 HORAS</div>
+    <div class="bglightblue ">
+        <p class="body-txt pt20">L-V</p>
+        <p class="button-txt-curso pb20">100€</p>
     </div>
-    <div class="w50 mauto line mv100 h3">
-        <p>Encuentra los mejores productos para disfrutar de tu pasión.</p>
-        <p>¡Disfruta de ofertas y promociones VIP!</p>
+    <div class="bgbluesat">
+        <p class="body-txt pt20">S-D</p>
+        <p class="button-txt-curso pb20">90€</p>
     </div>
+</div>
+<div class="col w33 dblock bblack m25">
+    <div class="button-txt30 bgdarkblue pt30 pb20">10 HORAS</div>
+    <div class="bglightblue">
+        <p class="body-txt pt20">L-V</p>
+        <p class="button-txt-curso pb20">100€</p>
+    </div>
+    <div class="bgbluesat">
+        <p class="body-txt pt20">S-D</p>
+        <p class="button-txt-curso pb20">150€</p>
+    </div>
+</div>
+<div class="flex w33 jbetween col m25">
+    <div class="flex col button-txt30 bgwhite bblack mb33 flex-1 h100 jcenter acenter">
+        <p class="body-txt blacktxt">+5 HORAS</p>
+        <p class="button-txt-curso bluetxt">50€</p>
+    </div>
+    <div class="flex col bgwhite bblack flex-1 h100 jcenter acenter">
+        <p class="body-txt blacktxt">Dia suelto</p>
+        <p class="button-txt-curso bluetxt">18€/H</p>
+    </div>
+</div>
 </section>
+
+
+<section class="clases-particulares flex h600px w90 p25 mv">
+<div class="curso-img2 w50"></div>
+<div class = "flex w50 col ph200 gap20 pv20 h3">
+    <p class="h2">CLASES <br> PARTICULARES</p>
+    <p>Además de nuestro programa de cursos de verano ofrecemos la posibilidad de asistir a clases particulares individualizadas o a grupos en cualquier época del año.</p>
+</div>
+</section>
+
+
+<section class="precios-alumno flex jcenter center tacenter bgray pv50 whitetxt gap50 ph150">
+<div class="col w33 bgdarkblue bblack m25">
+    <p class="txt60 pt50">1</p>
+    <p class="txt25">ALUMNO</p>
+    <p class = "txt16 hora pb20">LA HORA</p>
+    <p class = "button-txt-curso bgbluesat pv20">24€</p>
+</div>
+<div class="col w33 bgdarkblue bblack m25">
+    <p class="txt60 pt50">2</p>
+    <p class="txt25">ALUMNOS</p>
+    <p class = "txt16 hora pb20">LA HORA</p>
+    <p class = "button-txt-curso bgbluesat pv20">18€</p>
+</div>
+<div class="col w33 bgdarkblue bblack m25">
+    <p class="txt60 pt50">3</p>
+    <p class="txt25">ALUMNOS +</p>
+    <p class = "txt16 hora pb20">LA HORA</p>
+    <p class = "button-txt-curso bgbluesat pv20">16€</p>
+</div>  
+</section>
+
 <iframe id="map-canvas" style="width: 100%; height: 400px; aspect-ratio: auto;" frameborder="0" loading="lazy" scrolling="no" marginheight="0" marginwidth="0" class="mx-auto p-2" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=zurriola&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
 </iframe>
 <footer class="footer">
@@ -247,16 +243,21 @@
     <div>Teléfono: 123-456-7890 | Email:
 </footer>
 
+
+
+
 <!-- =========================
      JAVASCRIPT
 ========================== -->
 <script>
     // Seleccionamos el botón hamburguesa por su ID
     const hamburger = document.getElementById("hamburger");
-    const header = document.querySelector(".header");
 
     // Seleccionamos el menú de navegación
     const nav = document.getElementById("nav");
+
+    // Seleccionamos el header
+    const header = document.querySelector(".header");
 
     const logoSvg = document.getElementById('Capa_1');
 
@@ -272,8 +273,12 @@
         hamburger.classList.toggle("open");
         if(logoSvg.classList.contains("logo-dark")){
             logoSvg.classList.remove("logo-dark");
+            console.log("logo-dark removed");
         } 
-
+        if(!hamburger.classList.contains("open")){
+            logoSvg.classList.add("logo-dark");
+            console.log("logo-dark added");
+        }
     });
 
 
@@ -285,21 +290,13 @@ window.addEventListener('scroll', function () {
     const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
     if (!logoSvg) return;
 
-    if (scrollPercent >= 18 && scrollPercent <= 78) {
-        logoSvg.classList.add('logo-dark');
-    } else {
-        logoSvg.classList.remove('logo-dark');
-    }
-
-    
-    if (scrollPercent >= 16){
-    header.classList.add('scrolled');
+    if (scrollPercent >= 10){
+        header.classList.add('scrolled');
     }
     else {
         header.classList.remove('scrolled');
     }
 });
 </script>
-
 </body>
 </html>

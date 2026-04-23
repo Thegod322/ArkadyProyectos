@@ -1,0 +1,100 @@
+.container{
+    position: absolute;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100px;
+    width: 300px;
+    background-color: blueviolet;
+    color: white;
+    transition: 0.5s;
+    border-radius: 0px;
+}
+.container:hover{
+    height: 550px;
+    border-radius:20px;
+}
+.container2{
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    border: 40px solid blueviolet;
+    border-radius: 50%;
+    background-color: blue;
+    background-image: url(RES/GuapiLogo.svg);
+    background-size: cover;
+    color: white;
+    transition: 0.5s;
+}
+.container2:hover{
+    border-width: 5px;
+}
+.container3{
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    color: white;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+.container3 img{
+    scale: 0%;
+    transition: 2s;
+}
+
+.container3:hover img{
+    scale: 100%;
+    transition: 0.6s;
+}
+
+.flex{
+    display: flex;
+}
+.p250{
+    position: relative;
+    padding: 250px;
+}
+.w30{width:30%;}
+.w10{width:10%;}
+.h50px{height: 50px;}
+.h550px{height: 550px;}
+
+.h10{height: 10%;}
+.acenter{
+    align-items: center;
+}
+.jcenter{
+    justify-content: center;
+}
+.box{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    top: 0px;
+    left: 400px;
+    animation: moverBox 5s infinite;
+}
+
+@keyframes moverBox{
+    0%{
+        top: 0px;
+        left: 400px;
+    }
+    25%{
+        top: 0px;
+        left: 1000px;
+    }
+    50%{
+        top: 600px;
+        left: 1000px;
+    }
+    75%{
+        top: 600px;
+        left: 400px;
+    }
+    100%{
+        top: 0px;
+        left: 400px;
+    }
+}
