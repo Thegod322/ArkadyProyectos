@@ -1,0 +1,64 @@
+.diaimg{
+    background-image: url(RES/casa_dia.webp);
+    background-size: cover;
+}
+.nocheimg{
+    background-image: url(RES/casa_noche.webp);
+    background-size: cover;
+}
+.icono{
+    width: 48px;
+    height: 48px;
+}
+.hero {
+    height: 100vh;
+    background-image: url(RES/casa_hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.casaimg1{
+    background-image: url(RES/casa1.webp);
+    background-size: cover;
+}
+.casaimg2{
+    background-image: url(RES/casa2.webp);
+    background-size: cover;
+}
+.casaimg3{
+    background-image: url(RES/casa_dia.webp);
+    background-size: cover;
+}
+.casaimg4{
+    background-image: url(RES/casa4.webp);
+    background-size: cover;
+}
+.mat_card1 {
+    width: 300px;
+    height: 430px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url(RES/material1.webp);
+}
+.mat_card2 {
+    width: 300px;
+    height: 430px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url(RES/material2.webp);
+}.mat_card3 {
+    width: 300px;
+    height: 430px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url(RES/material3.webp);
+}.mat_card4 {
+    width: 300px;
+    height: 430px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url(RES/material4.webp);
+}
