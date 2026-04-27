@@ -3,10 +3,11 @@ const hudValue = document.querySelector('.slider-hud__value');
 const pageSlider = document.querySelector('.page-slider');
 const materialCards = Array.from(document.querySelectorAll('.material-card'));
 const materialGroups = Array.from(document.querySelectorAll('.slide-materials'));
+const slideCounterFace = document.getElementById('slide-counter-face');
 
 const SCROLL_DISTANCE = 600;
 const SNAP_THRESHOLD = 0.38;
-const IDLE_DELAY = 180;
+const IDLE_DELAY = 90;
 
 const slideParts = slides.map((slide) => ({
     slide,
@@ -41,6 +42,29 @@ if (activeIndex < 0) activeIndex = 0;
 function updateHud(index) {
     if (!hudValue) return;
     hudValue.textContent = `${String(index + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+}
+
+function flipCounter(index, animate) {
+    const newDigit = String(index + 1);
+    if (!slideCounterFace) return;
+    if (!animate) {
+        slideCounterFace.textContent = newDigit;
+        return;
+    }
+    gsap.to(slideCounterFace, {
+        rotateX: -90,
+        opacity: 0,
+        duration: 0.16,
+        ease: 'power1.in',
+        overwrite: true,
+        onComplete: () => {
+            slideCounterFace.textContent = newDigit;
+            gsap.fromTo(slideCounterFace,
+                { rotateX: 90, opacity: 0 },
+                { rotateX: 0, opacity: 1, duration: 0.2, ease: 'power1.out' }
+            );
+        }
+    });
 }
 
 function resolveMaterialImage(materialCard) {
@@ -143,6 +167,7 @@ function showActiveSlide(index, animateContent) {
         gsap.set(current.materials, { y: 0, autoAlpha: 1 });
     }
     updateHud(index);
+    flipCounter(index, animateContent);
 }
 
 function buildTransition(direction) {
@@ -191,7 +216,7 @@ function finishTransition(commit) {
 
     gsap.to(activeTransition.timeline, {
         progress: commit ? 1 : 0,
-        duration: commit ? 0.3 : 0.35,
+        duration: commit ? 0.2 : 0.25,
         ease: commit ? 'power2.out' : 'power2.inOut',
         overwrite: true,
         onComplete: () => {

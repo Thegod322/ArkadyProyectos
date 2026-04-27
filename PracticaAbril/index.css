@@ -108,6 +108,23 @@ body {
 	opacity: 0.8;
 }
 
+.slide-counter {
+	position: absolute;
+	left: 25%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+	perspective: 500px;
+	pointer-events: none;
+	color: #F6EDE2;
+	line-height: 1;
+}
+
+#slide-counter-face {
+	transform-origin: center center;
+	will-change: transform;
+}
+
 .slide-main {
 	display: flex;
 	flex-direction: column;
