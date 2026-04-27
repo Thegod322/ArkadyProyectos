@@ -17,12 +17,21 @@
         <a href="contacto.html" class="page-nav__link">CONTACTO</a>
     </nav>
 
-    <div class="hamburger" id="hamburger" aria-hidden="true">
+    <div class="hamburger" id="hamburger" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
     </div>
 </header>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <nav class="mobile-nav__list" aria-label="Navegación móvil">
+        <a href="index.html" class="mobile-nav__item">INICIO</a>
+        <a href="proyectos.html" class="mobile-nav__item">PROYECTOS</a>
+        <a href="equipo.html" class="mobile-nav__item">EQUIPO</a>
+        <a href="contacto.html" class="mobile-nav__item">CONTACTO</a>
+    </nav>
+</div>
 
 
     <div class="bgmaterial"></div>
@@ -182,5 +191,6 @@
 
     </section>
     
+<script src="hamburger.js"></script>
 </body>
 </html>
