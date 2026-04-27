@@ -255,6 +255,10 @@ a {
     font-family: 'Abril Fatface', serif;
     font-size: 96px;
 }
+.countertxt_pc {
+    font-family: 'Aboreto', serif;
+    font-size: 120px;
+}
 .h3_pc {
     font-family: 'Aboreto', sans-serif;
     font-size: 32px;
@@ -489,7 +493,18 @@ button:hover {
     display: flex;
 }
 
-@media (min-width: 431px) {
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1000px) {
     .mobile-nav { display: none !important; }
 }
 
@@ -522,10 +537,72 @@ button:hover {
     letter-spacing: 0.06em;
     background-color: rgba(246, 237, 226, 0.06);
 }
+.w55 {
+    width: 100%;
+}
+#infoblock {
+    position: relative;
+}
+#infoblock p
+{
+    width: 80% !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#galery {
+    flex-direction: column;
+    gap: 0px !important;
+    height: 100% !important;
+}
+#galery > div {
+    height: 600px !important;
+    width: 100% !important;
+    background-position: center;
+}
+#diatxt
+{
+    width: 100% !important;
+    text-align: center;
+}
+.dianoche
+{
+    background-position: center;
+}
+.grid
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.next_houseimg
+{
+    align-items: center;
+    justify-content: center;
+}
+.next_houseimg p
+{
+    width: 100% !important;
+
+
+
+}
+.input
+{
+    width: 100%;
+    border-radius: 0px;
+}
+
+
+
+
+
+
 
 /* ========== MEDIA QUERY: MOBILE (iPhone 15 — 393 × 852 logical px) ========== */
 
-@media (max-width: 430px) {
+@media (max-width: 1000px) {
 
     /* — Typography — */
     .h1_pc        { font-size: 40px; }
