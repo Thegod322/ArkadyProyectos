@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
-<body class=" bgray creamtxt">
+<body class="flex col bgray creamtxt gap100">
+<div class="bgmaterial"></div>
+
 <header class="header page-header flex jbetween acenter ph100 w100">
     <a href="index.html" class="brand h2_pc">ARGI & LUR</a>
     <nav class="page-nav flex pl100 gap50 navbartxt_pc" aria-label="Principal">
@@ -26,11 +28,11 @@
     </div>
 </header>  
 <section class="hero w100 h100vh flex col jend aend p100">
-    <div class="h1_pc">LA CASA MACASA</div>
+    <div class="h1_pc bgaccent2">LA CASA MACASA</div>
 </section>
-<section class ="noover">
+<section class ="noover flex col gap100">
 <div class="flex acenter jbetween ">
-    <div class="w25 pl100">Lorem ipsum dolor sit amet consectetur. Placerat netus elit euismod urna. Tortor suspendisse eu ornare quam habitant. Ornare tortor nisl porttitor arcu ultrices tristique sed. </div>
+    <div class="w25 pl100 body2_pc">Lorem ipsum dolor sit amet consectetur. Placerat netus elit euismod urna. Tortor suspendisse eu ornare quam habitant. Ornare tortor nisl porttitor arcu ultrices tristique sed. </div>
     <div class="casaimg1 w55 h600px"></div>
 </div>
 <div class="w130 flex gap50 relative w150 noover">
@@ -44,68 +46,69 @@
     <p class="promotxt_pc">LA CASA MACASA</p>
 </div>
 </section>
-<section class="flex col acenter jcenter">
-    <div>MATERIAL</div>
-    <div class="flex gap50 p100 acenter jcenter">
+<section class="flex col acenter jcenter mt50 gap50" id="mat-section">
+    <div id="mat-preview"></div>
+    <div class="h3_pc">MATERIAL</div>
+    <div class="flex gap50 ph100 acenter jcenter">
         <div class="mat_card1"></div>
         <div class="mat_card2"></div>
         <div class="mat_card3"></div>
         <div class="mat_card4"></div>
     </div>
-    <div>NERGRO MARKINA</div>
-    <div>Lorem ipsum dolor sit amet consectetur. Placerat netus elit euismod urna. Tortor suspendisse eu ornare quam habitant. Ornare tortor nisl porttitor arcu ultrices tristique sed. </div>
+    <div class="h3_pc">NERGRO MARKINA</div>
+    <div class="body2_pc w45">Lorem ipsum dolor sit amet consectetur. Placerat netus elit euismod urna. Tortor suspendisse eu ornare quam habitant. Ornare tortor nisl porttitor arcu ultrices tristique sed. </div>
 </section>
 <p class="h1_pc nowrap noover">LOREM IPSUM DOLOR SIT AMET</p>
 <section class="dia_noche">
 <div>
     <div class="w100 relative noover h800px">
         <div class="diaimg absolute top0 left0 w100 h100"></div>
-        <div class="nocheimg absolute top0 left0 w100 h100 "></div>
-        <div class="flex col jbetween aend">
-            <div>
-                <img src="RES/day.svg" alt="Icono 1" class="icono"></div>
-                <div><img src="RES/Night.svg" alt="Icono 2" class="icono"></div>
+        <div class="nocheimg absolute top0 left0 w100 h100" id="noche-layer"></div>
+        <div class="absolute top0 left0 w100 h100 flex col jbetween aend p100">
+            <div class="flex gap20">
+                <img src="RES/day.svg" alt="Día" class="icono dn-btn" id="btn-dia" style="cursor:pointer;">
+                <img src="RES/Night.svg" alt="Noche" class="icono dn-btn" id="btn-noche" style="cursor:pointer;">
             </div>
-            <div>Lorem ipsum dolor sit amet consectetur. Placerat netus elit euismod urna. Tortor suspendisse eu ornare quam habitant. Ornare tortor nisl porttitor arcu ultrices tristique sed. </div>
+            <div class="bgaccent2 body2_pc ph10p selfend w45">Lorem ipsum dolor sit amet consectetur. Placerat netus elit euismod urna. Tortor suspendisse eu ornare quam habitant. Ornare tortor nisl porttitor arcu ultrices tristique sed. </div>
         </div>
     </div>
 </div>
 </section>
-<section class="detalles_tecnicos">
-    <div> DETALLES TECNICOS</div>
+<section class="detalles_tecnicos flex col acenter gap50">
+    <div class="w80"> DETALLES TECNICOS</div>
     <div class="flex col selfcenter ">
-        <div class="grid  ph10p pv5p gap50 mh10 bgaccent" >
-            <div class="flex col" >
-                <p>VOLUMEN Y ESTRUCTURA</p>
-                <p> 180 m² · REFORMA INTEGRAL · PLANTA ABIERTA</p>
-                <p>Eliminación total de la tabiquería original para volcar el espacio hacia el Cantábrico. Inserción de un núcleo central portante que oculta los servicios y libera el perímetro, permitiendo una circulación fluida y continua.</p>
+        <div class="grid  ph10p pv5p mh10 bgaccent br6 graytxt" >
+            <div class="flex col gap10" >
+                <p class="h3_pc">VOLUMEN Y ESTRUCTURA</p>
+                <p class="h4_pc"> 180 m² · REFORMA INTEGRAL · PLANTA ABIERTA</p>
+                <p class="body2_pc">Eliminación total de la tabiquería original para volcar el espacio hacia el Cantábrico. Inserción de un núcleo central portante que oculta los servicios y libera el perímetro, permitiendo una circulación fluida y continua.</p>
             </div>
-            <div class="flex col">
-                <p>MATERIALIDAD Y KM0</p>
-                <p>GRIS DE DEBA · ROBLE LOCAL · MORTERO A LA CAL</p>
-                <p>Pavimento continuo artesanal que unifica las cotas. Empleo de piedra caliza extraída a menos de 40 km para las zonas de agua y madera de roble sin tratar para aportar calidez táctil al núcleo central.</p>
+            <div class="flex col gap10">
+                <p class="h3_pc">MATERIALIDAD Y KM0</p>
+                <p class="h4_pc">GRIS DE DEBA · ROBLE LOCAL · MORTERO A LA CAL</p>
+                <p class="body2_pc">Pavimento continuo artesanal que unifica las cotas. Empleo de piedra caliza extraída a menos de 40 km para las zonas de agua y madera de roble sin tratar para aportar calidez táctil al núcleo central.</p>
             </div>
-            <div class="flex col">
-                <p>COMPOSICION LUMINICA</p>
-                <p>CRI > 95 · 2700K · SISTEMA DALI</p>
-                <p>Diseño lumínico basado en el baño de paredes (wall-washing) para revelar la microtextura de la cal. Integración de fosos oscuros y luminarias de latón envejecido para bajar la escala visual durante la noche.</p>
+            <div class="flex col gap10">
+                <p class="h3_pc">COMPOSICION LUMINICA</p>
+                <p class="h4_pc">CRI > 95 · 2700K · SISTEMA DALI</p>
+                <p class="body2_pc">Diseño lumínico basado en el baño de paredes (wall-washing) para revelar la microtextura de la cal. Integración de fosos oscuros y luminarias de latón envejecido para bajar la escala visual durante la noche.</p>
             </div>
-            <div class="flex col">
-                <p>EFICIENCIA Y CONFORT</p>
-                <p>AEROTERMIA · SUELO RADIANTE · AISLAMIENTO SATE</p>
-                <p> Intervención profunda en la envolvente térmica. Climatización invisible y silenciosa que garantiza un confort absoluto frente a la humedad de la costa, minimizando el consumo energético del volumen.</p>
+            <div class="flex col gap10">
+                <p class="h3_pc">EFICIENCIA Y CONFORT</p>
+                <p class="h4_pc">AEROTERMIA · SUELO RADIANTE · AISLAMIENTO SATE</p>
+                <p class="body2_pc"> Intervención profunda en la envolvente térmica. Climatización invisible y silenciosa que garantiza un confort absoluto frente a la humedad de la costa, minimizando el consumo energético del volumen.</p>
             </div>
+            <p class="taright h2_pc">ARGI & LUR</p>
         </div>
-        <p>ARGI & LUR</p>
     </div>
 </section>
 
-<section class="next_house">
+<section class="next_house noover">
     <hr>
-    <div class="ph100 next_houseimg w100 h600px flex col jbetween relative">
-        <div class="flex">GUAPIKOREN ETXE</div>
-        <div class="flex selfend">Lorem ipsum dolor sit amet consectetur. Placerat netus elit euismod urna. Tortor suspendisse eu ornare quam habitant. Ornare tortor nisl porttitor arcu ultrices tristique sed. </div>
-    </div>
+    <a href="#" class="ph100 next_houseimg w100 h600px flex col jbetween relative ">
+        <div class="flex h2_pc">GUAPIKOREN ETXE</div>
+        <div class="flex body2_pc w45 p50 ph100">Lorem ipsum dolor sit amet consectetur. Placerat netus elit euismod urna. Tortor suspendisse eu ornare quam habitant. Ornare tortor nisl porttitor arcu ultrices tristique sed. </div>
+    </a>
     <hr>
 </section>
 
@@ -180,6 +183,55 @@
     </div>
 
 </section>
+
+<script>
+    const matPreview = document.getElementById('mat-preview');
+    const matCards = document.querySelectorAll('.mat_card1, .mat_card2, .mat_card3, .mat_card4');
+
+    matCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            const img = getComputedStyle(card).backgroundImage;
+            matPreview.style.backgroundImage = img;
+            matPreview.style.opacity = '0.1';
+        });
+        card.addEventListener('mouseleave', () => {
+            matPreview.style.opacity = '0';
+        });
+    });
+
+    const nocheLayer = document.getElementById('noche-layer');
+    const btnDia = document.getElementById('btn-dia');
+    const btnNoche = document.getElementById('btn-noche');
+
+    let currentMode = 'noche';
+    let autoTimer = null;
+
+    function setMode(mode) {
+        currentMode = mode;
+        if (mode === 'dia') {
+            nocheLayer.style.opacity = '0';
+            btnDia.classList.remove('dn-inactive');
+            btnNoche.classList.add('dn-inactive');
+        } else {
+            nocheLayer.style.opacity = '1';
+            btnNoche.classList.remove('dn-inactive');
+            btnDia.classList.add('dn-inactive');
+        }
+    }
+
+    function startAutoTimer() {
+        clearInterval(autoTimer);
+        autoTimer = setInterval(() => {
+            setMode(currentMode === 'noche' ? 'dia' : 'noche');
+        }, 5000);
+    }
+
+    btnDia.addEventListener('click', () => { setMode('dia'); startAutoTimer(); });
+    btnNoche.addEventListener('click', () => { setMode('noche'); startAutoTimer(); });
+
+    setMode('noche');
+    startAutoTimer();
+</script>
     
 </body>
 </html>
