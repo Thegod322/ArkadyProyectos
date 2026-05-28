@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body class="flex acenter jcenter">
+    <form action="/submit" class="flex col acenter jcenter w80 gap10">
+        <fieldset class="flex col w100 gap10 p50 h3_pc" id="datosPersonales">
+            <legend>Datos personales</legend>
+            <input type="text" id="name" name="name" placeholder="Nombre:">
+            <input type="email" id="email" name="email" placeholder="Correo electrónico:">
+            <input type="number" id="age" name="age" placeholder="Edad:">
+            <input type="password" id="password" name="password" placeholder="Contraseña:">
+            <p>Selecciona género:</p>
+            <div class="flex gap10">
+                <input type="radio" id="option1" name="genero" value="Hombre">
+                <label for="option1">Hombre</label>
+            </div>
+            <div class="flex gap10">
+                <input type="radio" id="option2" name="genero" value="Mujer">
+                <label for="option2">Mujer</label>
+            </div>
+        </fieldset>
+        <fieldset class="flex col w100 gap10 p50 h3_pc" id="perfilEstudios">
+            <legend>Perfil / estidos</legend>
+            <input type="text" id="estudios" name="estudios" placeholder="Centro educativo:">
+            <div class="flex gap10">
+                <input type="radio" name="tipoEstudio" id="tipoEstudio" value="secundaria">
+                <label for="tipoEstudio">Secundaria</label>
+            </div>
+            <div class="flex gap10">
+                <input type="radio" name="tipoEstudio" id="tipoEstudio" value="universidad">
+                <label for="tipoEstudio">Universidad</label>
+            </div>
+            <div class="flex gap10">
+                <input type="radio" name="tipoEstudio" id="tipoEstudio" value="postgrado">
+                <label for="tipoEstudio">Postgrado</label>
+            </div>
+        </fieldset>
+        <div class="flex gap10 w100">
+            <label for="condiciones" class="body2_pc">He leido y acepto los terminos y condiciones</label>
+            <input type="checkbox" id="condiciones" name="condiciones" >
+        </div>
+        <input type="submit" id="btnEnviar" value="Enviar" class="w100 h3_pc" disabled>
+    </form>
+
+    <!-- Popup confirmación -->
+    <div id="popup" class="popup-overlay hidden">
+        <div class="popup-box h3_pc acenter jcenter">
+            <p>¡Datos enviados correctamente!</p>
+            <button id="cerrarPopup" class=" w100 h3_pc">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        const form = document.querySelector('form');
+        const popup = document.getElementById('popup');
+        const cerrarPopup = document.getElementById('cerrarPopup');
+        const condiciones = document.getElementById('condiciones');
+        const btnEnviar = document.getElementById('btnEnviar');
+
+        condiciones.addEventListener('change', function() {
+            btnEnviar.disabled = !this.checked;
+        });
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            popup.classList.remove('hidden');
+            form.reset();
+        });
+
+        cerrarPopup.addEventListener('click', function() {
+            popup.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

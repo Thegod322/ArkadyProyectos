@@ -1,0 +1,59 @@
+/* ========== POPUP ========== */
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+/* ========== BOTÓN ENVIAR ========== */
+#btnEnviar:disabled {
+    background: #aaa;
+    color: #eee;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.popup-overlay.hidden {
+    display: none;
+}
+
+.popup-box {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.popup-box button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-box button:hover {
+    background: #555;
+}
+
+#datosPersonales > input 
+{
+    font-family: 'Aboreto';
+    font-size: 25px;
+}
+#perfilEstudios > input 
+{
+    font-family: 'Aboreto';
+    font-size: 25px;
+}
