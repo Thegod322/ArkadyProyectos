@@ -1,0 +1,21 @@
+header
+{
+    width: 100%;
+    height: 100dvh;
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    flex-direction: column;
+}
+button{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
