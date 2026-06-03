@@ -1,16 +1,23 @@
+@use 'config' as c;
+
 header
 {
     width: 100%;
-    height: 100dvh;
-    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    height: 8dvh;
+    background: c.$semi-black;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: c.$primer-color;
     font-size: 2rem;
     flex-direction: column;
 }
-button{
+body
+{
+    background: c.$semi-black;
+    font-family: c.$primary-font;
+}
+a{
     padding: 1rem 2rem;
     font-size: 1.5rem;
     background-color: #ffffff;
@@ -18,4 +25,53 @@ button{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+a:hover
+{
+    background-color: c.$primer-color;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+h1
+{
+    color: c.$primer-color;
+    font-size: 3rem;
+    transition: all 0.3s ease;
+    @media (min-width: c.$tablet)
+    {
+        font-size: 4rem;
+        color: c.$light-color;
+        transition: all 0.3s ease;
+    }
+    @media (min-width: c.$desktop)
+    {
+        font-size: 5rem;
+        color: c.$secondary-color;
+        transition: all 0.3s ease;
+    }
+}
+.texts-shadow
+{
+    text-shadow: 2px 2px 4px c.$primer-color;
+}
+
+
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.gap-4{
+    gap: 1rem;
+}
+.h-100{
+    height: 100vh;
 }
