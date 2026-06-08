@@ -1,0 +1,96 @@
+@use '/src/config' as c;
+.elemento{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media (max-width: c.$tablet) {
+        flex-direction: column;
+        align-items: center;
+        > :nth-child(1) { order: 2; }
+        > :nth-child(2) { order: 1; }
+    }
+    @media (min-width: c.$tablet) {
+        &.invert{
+        > :nth-child(1) { order: 2; }
+        > :nth-child(2) { order: 1; }
+        }
+    }
+    
+    >:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 3rem;
+       
+
+    }
+    >:nth-child(2){
+        place-content: center;
+        place-items: center;
+      
+    }
+
+}
+a{
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    
+    &:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+
+}
+
+.bgimg{
+    background-image: url(/src/assets/hero.png);
+    height: 500px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    >p{
+        color: rgba(0, 0, 0, 0);
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(0px);
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    &:hover{
+        >p{
+            color: rgb(0, 0, 0, 0.9);
+            opacity: 1;
+            max-height: 200px;
+            transition: 0.5s;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+    transition: 0.3s;
+
+    }
+    transition: 0.3s;
+
+
+
+}
+.tres-articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
