@@ -1,0 +1,58 @@
+@use '/src/config' as c;
+.pers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    gap: 20px;
+    .active{
+        //background-color: c.$primary;
+        //color: white;
+        border-bottom: 3px solid black;
+    }
+    .large-text{
+        font-size: 4.5rem;
+        transition: 0.3s ease-in-out;
+    }
+    .sel-button{
+        display: flex;
+        align-items: flex-end;
+        transition: 0.3s ease-in-out;
+    }
+    .is-changing {
+        opacity: 0;
+        transform: translateY(10px);
+    }   
+    .caja1{
+        display: grid;
+        grid-template-rows: 7fr 3fr;
+        >img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+        :nth-child(2){
+            width: 30%;
+        }
+    }
+    .caja2{
+        display: grid;
+        grid-template-rows: max-content auto;
+        .selector{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            border-bottom: 1px solid black;
+            :nth-child(1){
+                display: flex;
+                flex-direction: row;
+
+            }
+            
+        }
+        .text{
+            font-size: 10rem;
+        }   
+        
+    }
+}
