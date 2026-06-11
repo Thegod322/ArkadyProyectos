@@ -1,4 +1,4 @@
-@use '/src/config' as c;
+@use './config' as c;
 .pers{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,9 +9,13 @@
         //color: white;
         border-bottom: 3px solid black;
     }
+    #desc{
+        transition: 0.3s;
+    }
     .large-text{
         font-size: 4.5rem;
         transition: 0.4s ease-in-out;
+        
     }
     .sel-button{
         display: flex;
@@ -21,6 +25,7 @@
     .is-changing {
         opacity: 0;
         transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }   
     .caja1{
         display: grid;
@@ -52,7 +57,25 @@
         }
         .text{
             font-size: 10rem;
+            transition: 0.3s ease-in-out;
         }   
         
+    }
+    @media (max-width: c.$tablet) {
+        grid-template-columns: 1fr;
+        .caja1, .caja2{
+            grid-template-rows: 1fr 1fr;
+            .text{
+                font-size: 7rem;
+            }
+        }
+        &:nth-child(1){
+            order: 2;
+        }
+        &:nth-child(2){
+            order: 1;
+        }
+
+
     }
 }

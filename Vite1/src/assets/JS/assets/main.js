@@ -1,8 +1,4 @@
-import './style.css'
-import javascriptLogo from './assets/javascript.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import { setupCounter } from './counter.js'
+import '../../SCSS/style.scss'
 
 const image = document.querySelector('#art-img')
 const cultureButton = document.querySelector('#culture')
@@ -23,18 +19,35 @@ const artData = {
 }
 
 cultureButton.onclick = () => {
-  image.src = artData.culture.imgsrc;
-  artText.innerHTML = artData.culture.headline;
-  descText.innerHTML = artData.culture.desc;
-  toggleActive(cultureButton);
-  toggleTextSize(cultureButton);
+  clicked(cultureButton);
 }
 servicesButton.onclick = () => {
-  image.src = artData.services.imgsrc;
-  artText.innerHTML = artData.services.headline;
-  descText.innerHTML = artData.services.desc;
-  toggleActive(servicesButton);
-  toggleTextSize(servicesButton);
+  clicked(servicesButton);
+}
+async function clicked(button){
+  const dinamicContet = [image, artText, descText];
+  const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+  fadeout(dinamicContet);
+  toggleActive(button);
+  toggleTextSize(button);
+  await wait(500);
+  fadein(dinamicContet);
+  const selected = artData[button.id];
+  image.src = selected.imgsrc;
+  artText.innerHTML = selected.headline;
+  descText.innerHTML = selected.desc;
+}
+function fadeout(elements){
+  for(let element of elements)
+    {
+      element.classList.add('is-changing');
+    }
+}
+function fadein(elements){
+  for(let element of elements)
+    {
+      element.classList.remove('is-changing');
+    }
 }
 
 function toggleActive(button) {
