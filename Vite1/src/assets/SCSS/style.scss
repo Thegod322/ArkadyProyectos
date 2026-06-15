@@ -1,6 +1,7 @@
 @use './assets/config' as c;
 @use './assets/artpers' as a;
 @use './assets/expandible' as e;
+@use './assets/pickable' as p;
 .elemento{
     display: flex;
     flex-direction: row;
@@ -40,10 +41,11 @@ a{
     padding: 1rem 2rem;
     text-decoration: none;
     text-align: center;
+    border: 1px solid transparent;
     
     &:hover{
-        background-color: white;
-        color: black;
+        background-color: white !important;
+        color: black !important;
         border: 1px solid black;
     }
 
@@ -107,4 +109,14 @@ button{
         background-color: black;
         color: white;
     }
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    margin: 0;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }

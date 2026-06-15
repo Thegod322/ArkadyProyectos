@@ -3,8 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .expanded{
+        max-height: 250px!important;
+        transition: 0.5s;
+    }
     .article
     {
+        border: 1px solid black;
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -12,15 +18,18 @@
         width: 30vw;
 
         >p {
-            margin: 0;
-            line-height: 1.4;
+            max-height: 20px;
             overflow: hidden;
-            transition: max-height 0.35s ease;
+            transition: 0.5s;
+            margin: 0;
+            text-align: center;
+            align-self: center;
         }
-
-        >p.expanded {
-            overflow: visible;
+        >button{
+            margin-bottom: 15px;
+            margin-top: 15px;
         }
     }
+    
 
 }
