@@ -1,0 +1,26 @@
+@use './config' as c;
+.expandible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .article
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+
+        >p {
+            margin: 0;
+            line-height: 1.4;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        >p.expanded {
+            overflow: visible;
+        }
+    }
+
+}

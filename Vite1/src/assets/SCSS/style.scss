@@ -1,5 +1,6 @@
 @use './assets/config' as c;
 @use './assets/artpers' as a;
+@use './assets/expandible' as e;
 .elemento{
     display: flex;
     flex-direction: row;
