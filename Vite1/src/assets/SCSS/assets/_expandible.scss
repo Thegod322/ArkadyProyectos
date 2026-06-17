@@ -3,9 +3,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: c.$tablet) {
+        flex-direction: column;
+    }
     .expanded{
         max-height: 250px!important;
         transition: 0.5s;
+        
     }
     .article
     {
@@ -16,6 +20,9 @@
         justify-content: center;
         align-items: center;
         width: 30vw;
+        @media (max-width: c.$tablet) {
+            width: 80vw;
+        }
 
         >p {
             max-height: 20px;
