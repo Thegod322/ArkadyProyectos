@@ -1,0 +1,82 @@
+@use "config" as c;
+
+.artSlider01 {
+    display: flex;
+    align-self: center;
+    position: relative;
+    width: 100%;
+    padding: 0 1.5rem;
+    background-color: c.$color01;
+    border-radius: 20px;
+
+  @media only screen and (min-width: c.$tablet) {
+    width: 80%;
+    padding: initial;
+  }
+
+  > :nth-child(1) {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  > :nth-child(1) > :nth-child(1) {
+    display: flex;
+  }
+
+  .artSlider01__slide {
+    width: 100%;
+    height: 55dvh;
+    flex: 0 0 100%;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(c.$color04, 0.45);
+    }
+
+    h3 {
+      position: absolute;
+      z-index: 100;
+      color: c.$color00;
+      font-size: clamp(2rem, 5vw, 5rem);
+      text-align: center;
+      text-shadow: 0px 0px 5px c.$color01;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: 1s;
+    }
+  }
+  .artSlider01__track {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 20px;
+    .artSlider01__track__dot {
+      height: 15px;
+      width: 15px;
+      background-color: #fff;
+      opacity: 0.5;
+      border-radius: 50%;
+      &.active {
+        opacity: 1;
+        transition: opacity 500ms;
+      }
+    }
+  }
+}

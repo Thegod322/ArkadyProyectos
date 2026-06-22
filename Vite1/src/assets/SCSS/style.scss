@@ -2,6 +2,7 @@
 @use './assets/artpers' as a;
 @use './assets/expandible' as e;
 @use './assets/pickable' as p;
+@use './assets/artslider' as s;
 .elemento{
     display: flex;
     flex-direction: row;
