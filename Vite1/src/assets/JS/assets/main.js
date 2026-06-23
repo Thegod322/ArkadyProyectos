@@ -1,4 +1,7 @@
 import '../../SCSS/style.scss'
+import topButton from './_topbutton'
+document.body.appendChild(topButton());
+
 
 const image = document.querySelector('#art-img')
 const cultureButton = document.querySelector('#culture')
