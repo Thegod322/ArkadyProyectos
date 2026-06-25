@@ -5,6 +5,11 @@
 @use './assets/artslider' as s;
 @use './assets//topbutton' as t;
 @use './assets/darkMode' as d;
+:root{
+    --color00:#{c.$color00};
+    --color01:#{c.$color01};
+    --primary:#{c.$primary};
+}
 .elemento{
     display: flex;
     flex-direction: row;
@@ -39,16 +44,16 @@
 
 }
 a{
-    background-color: c.$primary;
-    color: c.$color01;
+    background-color: var(--primary);
+    color: var(--color01);
     padding: 1rem 2rem;
     text-decoration: none;
     text-align: center;
     border: 1px solid transparent;
     
     &:hover{
-        background-color: c.$color01 !important;
-        color: c.$color00 !important;
+        background-color: var(--color01) !important;
+        color: var(--color00) !important;
         border: 1px solid black;
     }
 
@@ -109,8 +114,8 @@ button{
     border: none;
     cursor: pointer;
     &:hover{
-        background-color: c.$primary;
-        color: c.$color01;
+        background-color: var(--primary);
+        color: var(--color01);
     }
 }
 body{
@@ -122,6 +127,6 @@ body{
     margin-bottom: 200px;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color:c.$color00;
-    background-color: c.$color01;
+    color:var(--color00);
+    background-color: var(--color01);
 }
