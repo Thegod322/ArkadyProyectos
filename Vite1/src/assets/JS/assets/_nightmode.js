@@ -1,8 +1,26 @@
-export default function darkmode(){
-    const $btnDarkMode = document.querySelector(".nav__container--darkModeButton");
+export default function nightButton(){
+    const $btnDarkMode = document.createElement("button");
+    $btnDarkMode.className = "night-button";
+    $btnDarkMode.innerHTML = `
+    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    `;
+    //const $btnDarkMode = document.querySelector(".nav__container--darkModeButton");
     $btnDarkMode.addEventListener( "click" , (e)=> {
         const $icon = $btnDarkMode.querySelector(".fa-solid");
-        $icon.classList.remove(".fa-solid")
-        $icon.classList.add("fa-sun")
+        if($icon.classList.contains("fa-moon")){
+            console.log("pizdec")
+
+            $icon.classList.remove("fa-moon");
+            $icon.classList.add("fa-sun");
+        }
+        else{
+            console.log("zalupkaaa")
+
+            $icon.classList.remove("fa-sun");
+            $icon.classList.add("fa-moon");
+
+        }
     } );
+
+    return $btnDarkMode;
 }

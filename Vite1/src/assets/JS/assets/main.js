@@ -1,5 +1,7 @@
 import '../../SCSS/style.scss'
 import topButton from './_topbutton'
+import nightButton from './_nightmode'
+document.body.appendChild(nightButton())
 document.body.appendChild(topButton());
 
 
