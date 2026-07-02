@@ -1,0 +1,70 @@
+*{
+  margin:0;
+  padding:0;
+
+}
+$background-col : rgba(31, 44 ,61, 1);
+$text-col: rgb(241, 241, 241);
+$glass-col : rgba(0, 0, 0, 0.3)!important;
+$btn-col:rgba(255, 255, 255, 0.103);
+$outline-col : rgba(183, 208, 241,0.1) ;
+$h1: 3rem;
+$h2: 2rem;
+$h3: 1rem;
+
+a{
+  text-decoration: none;
+  color:white!important;
+}
+main{
+  background-color: $background-col;
+}
+button{
+  border-radius:10px;
+  border: none;
+  background-color: $btn-col;
+  margin:20px;
+  outline:  solid 1px  $outline-col;
+
+
+}
+h1{
+  font-size:$h1;
+}
+h2{
+  font-size:$h2;
+}
+h3{
+  font-size:$h3;
+}
+.h1{
+  font-size:$h1;
+}
+.h2{
+  font-size:$h2;
+}
+.h3{
+  font-size:$h3;
+}
+.border-rad{
+  border-radius:10px;
+}
+.text-col{
+  color : $text-col;
+}
+.hero{
+  background-image: url('/src/assets/heroimg.webp');
+  background-size:cover;
+  background-position:center;
+  height: 100%;
+  width: 100%;
+}
+.bg-glass{
+  background-color:$glass-col;
+  backdrop-filter: blur(10px);
+  outline:  solid 1px  $outline-col;
+}
+.nav-item{
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.719);
+}
+.nav-link{color:none;}
