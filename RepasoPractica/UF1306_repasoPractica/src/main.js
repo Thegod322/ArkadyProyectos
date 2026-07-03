@@ -4,9 +4,12 @@ document.addEventListener("click", (e) => {
   
   if (e.target.matches(".btn-exp")) {
     console.log("Hiciste clic en uno de los botones");
+    // Busca el contenedor de la tarjeta más cercano
     const $tarjeta = e.target.closest('.card');
+    // Dentro de esa tarjeta, busca el div colapsable
     const $hiddentext = $tarjeta.querySelector('.colapsable');
-    console.log($hiddentext)
+    console.log($hiddentext);
+    // Alterna la clase open si el elemento existe
     if($hiddentext && $hiddentext.classList.contains("colapsable")){
         $hiddentext.classList.toggle("open");
     }

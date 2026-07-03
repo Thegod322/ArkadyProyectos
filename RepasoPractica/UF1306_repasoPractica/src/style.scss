@@ -1,85 +1,96 @@
-*{
-  margin:0;
-  padding:0;
-  
-
+* {
+  margin: 0;
+  padding: 0;
 }
-$background-col : rgba(31, 44 ,61, 1);
+
+$background-col : rgba(31, 44, 61, 1);
 $text-col: rgb(241, 241, 241);
-$glass-col : rgba(0, 0, 0, 0.3)!important;
-$btn-col:rgba(255, 255, 255, 0.103);
-$outline-col : rgba(183, 208, 241,0.1) ;
+$glass-col : rgba(0, 0, 0, 0.3) !important;
+$btn-col: rgba(255, 255, 255, 0.103);
+$outline-col : rgba(183, 208, 241, 0.384);
 $h1: 3rem;
 $h2: 2rem;
 $h3: 1rem;
 
-a{
+a {
   text-decoration: none;
-  color:white!important;
+  color: white !important;
 }
-main{
+
+main {
   background-color: $background-col;
 }
-button{
-  border-radius:10px;
+
+/* LA CLASE MAGICA PARA EL 90% */
+.contenedor-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  border-radius: 10px;
   border: none;
   background-color: $btn-col;
-  margin:20px;
-  outline:  solid 1px  $outline-col;
+  margin: 20px 0; /* Ajustado el margen lateral para que no desborde en las tarjetas */
+  padding: 10px;
+  outline: solid 1px $outline-col;
+}
 
 
+h1, .h1 { font-size: $h1; }
+h2, .h2 { font-size: $h2; }
+h3, .h3 { font-size: $h3; }
 
+.border-rad {
+  border-radius: 10px;
 }
-h1{
-  font-size:$h1;
+
+.text-col {
+  color: $text-col;
 }
-h2{
-  font-size:$h2;
-}
-h3{
-  font-size:$h3;
-}
-.h1{
-  font-size:$h1;
-}
-.h2{
-  font-size:$h2;
-}
-.h3{
-  font-size:$h3;
-}
-.border-rad{
-  border-radius:10px;
-}
-.text-col{
-  color : $text-col;
-}
-.hero{
+
+.hero {
   background-image: url('/src/assets/heroimg.webp');
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
   height: 100%;
   width: 100%;
 }
-.bg-glass{
-  background-color:$glass-col;
+
+.bg-glass {
+  background-color: $glass-col;
   backdrop-filter: blur(10px);
-  outline:  solid 1px  $outline-col;
+  outline: solid 1px $outline-col;
 }
-.nav-item{
+
+.nav-item {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.719);
 }
-.nav-link{color:none;}
-.colapsable{
+
+.nav-link {
+  color: none;
+}
+
+.colapsable {
   max-height: 0px;
   transition: 1s;
-  padding-left: 25px;
-  padding-right: 10px;
 }
-.open{
+
+.open {
   max-height: 500px;
   transition: 1s;
 }
-.card{padding:0px;}
-.accordeon{min-height: 600px;}
 
+.card {
+  padding: 0px;
+  border-radius:10px;
+  img{
+    height:300px;
+    object-fit: cover; /* La clave del éxito */
+    object-position: center;
+  }
+}
+
+.accordeon {
+  min-height: 600px;
+}
