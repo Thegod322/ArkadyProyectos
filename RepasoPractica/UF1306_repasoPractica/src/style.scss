@@ -1,6 +1,7 @@
 *{
   margin:0;
   padding:0;
+  
 
 }
 $background-col : rgba(31, 44 ,61, 1);
@@ -25,6 +26,7 @@ button{
   background-color: $btn-col;
   margin:20px;
   outline:  solid 1px  $outline-col;
+
 
 
 }
@@ -68,3 +70,16 @@ h3{
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.719);
 }
 .nav-link{color:none;}
+.colapsable{
+  max-height: 0px;
+  transition: 1s;
+  padding-left: 25px;
+  padding-right: 10px;
+}
+.open{
+  max-height: 500px;
+  transition: 1s;
+}
+.card{padding:0px;}
+.accordeon{min-height: 600px;}
+

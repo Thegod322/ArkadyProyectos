@@ -4,11 +4,11 @@ document.addEventListener("click", (e) => {
   
   if (e.target.matches(".btn-exp")) {
     console.log("Hiciste clic en uno de los botones");
-    const $hiddentext = e.target.nextElementSibling;
-    console.log(e.target.nextElementSibling)
+    const $tarjeta = e.target.closest('.card');
+    const $hiddentext = $tarjeta.querySelector('.colapsable');
     console.log($hiddentext)
-    if($hiddentext && $hiddentext.classList.contains("collapse")){
-        $hiddentext.classList.toggle("show");
+    if($hiddentext && $hiddentext.classList.contains("colapsable")){
+        $hiddentext.classList.toggle("open");
     }
   }
 });
